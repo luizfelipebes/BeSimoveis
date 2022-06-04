@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+.menu a{
+    text-decoration: none;
+    color: #63795e;
+    font-weight: bold;
+}
+.menu a:hover{
+    color: #51c135;
+}
+main{
+    background: url(https://blog.urbs.com.br/wp-content/uploads/2019/08/original-d280d922072cd3a52ceaaf5cb68398a1-1024x680.jpg) no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+#título-1{
+    text-align: center;
+    position:relative;
+    top: 50%;
+    color:white;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    margin: 8px;
+}
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translate(100%);
+        transition: transform 0.3s ease-in;
+        background-color: rgba(255, 255, 255, 0.726);
+    }
+    .menu li{
+        margin-left: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+.menu.active{
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#título-2{
+    padding: 2%;
+    margin: 8% 35% 2% 35%;
+    border: 1px solid #8fff73;
+    border-radius: 10px;
+    width: 30% auto;
+    font-size: 35px;
+    text-align: center;
+    background-color:#8fff73;
+}
+#lugares{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    justify-content: center;
+}
+#lugares li{
+    list-style-type: none;
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #d2ebcc;
+    border-radius: 10px;
+    margin: 50px;
+    font-size: 20px;
+    background-color:#d2ebcc;
+}
+#lugares a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.9s;
+}
+#lugares a:hover{
+    opacity: 0.7;
+}
+#título-3{
+    padding: 2%;
+    margin: 5% 35% 1% 35%;
+    border: 1px solid #8fff73;
+    border-radius: 10px;
+    width: 50% auto;
+    font-size: 35px;
+    text-align: center;
+    background-color:#8fff73;
+}
+.contatos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contatos a{
+    color: black;
+}
+.contatos a:hover{
+    opacity: 0.5;
+}
+.contatos li{
+list-style-type: none;
+padding: 4%;
+}
+#expli-contatos{
+    margin:8% 33% 0% 33%;
+    text-align:center;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    border-radius: 5px;
+    padding: 1%;
+}
+#fone{
+    font-size: 25px;
+    font-weight: bold;
+}
+.Redes{
+    text-align: center;
+    display: flex;
+}
+#redes{
+    padding: 7%;
+}
+#título-4{
+    padding: 2%;
+    margin: 8% 35% 2% 35%;
+    border: 1px solid #8fff73;
+    border-radius: 10px;
+    width: 30% auto;
+    font-size: 35px;
+    text-align: center;
+    background-color:#8fff73;
+}
