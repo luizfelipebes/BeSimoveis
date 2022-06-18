@@ -122,7 +122,7 @@ main{
     opacity: 0.9s;
 }
 #lugares a:hover{
-    opacity: 0.7;
+    opacity: 0.9;
 }
 #título-3{
     padding: 2%;
@@ -145,7 +145,7 @@ main{
     color: black;
 }
 .contatos a:hover{
-    opacity: 0.5;
+    opacity: 0.9;
 }
 .contatos li{
 list-style-type: none;
